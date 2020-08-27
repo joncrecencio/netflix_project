@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- arquivos owl css -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <title>Netflix Projects</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="./imagens/logo.png" alt="Logo Netflix"></a>
+            <nav>
+                <a style="color:white;" href="index.html">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+            <div class="select-box">
+                <select name="menu-mobile" id="menu-mobile" class="menu-mobile">
+                    <option value="inicio">Início</option>
+                    <option value="series">Séries</option>
+                    <option value="filmes">Filmes</option>
+                    <option value="documentarios">Documentários</option>
+                </select>
+            </div><!--select-box-->
+        </div><!--container-->
+    </header>
+    <div id="modalOverlay">
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <div class="titulo"></div>
+                <p class="descricao">Playboy, milionário e mulherengo, Oliver Queen (Stephen Amell) está presumivelmente morto há 5 anos, quando um acidente de iate causou o desaparecimento dele, de seu pai, Robert (Jamey Sheridan), e Sara Lance, irmã de sua então namorada Laurel (Katie Cassidy).</p>
+
+                <div class="botoes"">
+                    <button role="button" onclick="clicar()" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+        
+                    <button role="button"onclick="informacao()" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div><!--botoes-->
+            </div><!--container-->
+        </div><!--filme-principal-->
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="container">
+            <h2 class="teste">Mais vistos</h2>
+            <div class="owl-carousel owl-theme" id="filme-cartaz">
+                
+            </div><!--owl-carousel-->
+
+            <h2 class="teste">Ação</h2>
+            <div class="owl-carousel owl-theme" id="acao">
+                
+            </div><!--owl-carousel-->
+    </div>
+    </div><!--carrosel-filmes-->
+    </div><!--modalOverlay-->
+    <script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
+    <script src="javascript/owl/jquery.min.js"></script>
+    <script src="javascript/owl/owl.carousel.min.js"></script>
+    <script src="javascript/script.js"></script>
+
+</body>
+</html>

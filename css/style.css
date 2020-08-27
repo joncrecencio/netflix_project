@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preta);
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+header{
+    width: 100%;
+}
+
+.container{
+    max-width: 1444px;
+    margin: 10px auto;
+    padding: 0 2%;
+}
+
+header .container{
+    max-width: 1444px;
+    display: flex;
+    align-items: center;
+}
+
+header .container img{
+    width: 160px;
+    height: 50px;
+    padding: 5px;
+    margin-right: 35px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 12px;
+    font-weight: 400;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+header nav a:hover{
+    transition: 500ms;
+    color: #fff;
+}
+
+header .select-box{
+    padding-left: 16%;
+}
+
+header .menu-mobile{
+    width: 180px;
+    padding: 8px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%),  black;
+    color: white;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    border-radius: 0.3rem;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%), url('/imagens/arrow.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .container{
+    margin: 0;
+    width: 70%;
+}
+
+.filme-principal .descricao{
+    margin-top: 20px;
+    margin-bottom: 90px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+
+.filme-principal .titulo{
+    background-image: url(https://occ-0-1278-1380.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABQUgPcW17qrymQOs4frIfCxSijNKi2YN0CA3CKyHp23IyAc01pd3j_3kisnBRJgPwIqTPaeAEtZGnvHCa9mAeLQoDs5BtioL_A.webp?r=045);
+    background-size: contain;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 400px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 600ms;
+    border-radius: 0.5rem;
+}
+
+.botao:hover{
+    transition: 600ms;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #141414;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.teste{
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#modalOverlay iframe{
+    width: 98.5vw;
+    height: 100vh;
+    overflow-x: hidden;
+}

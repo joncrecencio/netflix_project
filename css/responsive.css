@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px){
+    
+    header .menu-mobile{
+        display: block;
+    }   
+
+    nav{
+        display: none;
+    }
+
+    .botao{
+        margin-top: 0.5rem;
+        height: 60px;
+    }
+
+    .filme-principal .descricao{
+        margin-bottom: 0.3rem;
+    }
+
+    .filme-principal .titulo{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    header .menu-mobile{
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    header .select-box{
+        padding-left: 5%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .filme-principal .descricao{
+        width: 60%;
+    }
+}
