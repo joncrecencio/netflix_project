@@ -2,6 +2,7 @@ const filmes = document.querySelector('#filme-cartaz')
 const acao = document.querySelector('#acao')
 const modalOverlay = document.querySelector('#modalOverlay')
 
+/**Arrays que guardam temporariamente as imagens e titulos dos filmes */
 const urlsCartaz = [
     {
         link:"https://image.tmdb.org/t/p/w220_and_h330_face/oaLXsduGoDOOftWziIOvyZzrR4T.jpg",
@@ -104,6 +105,9 @@ const urlsAcao =  [
         nome:"Star Wars"
     }]   
 
+/** Funções */
+
+//for each percorrendo os Arrays para popular o HTML com os filmes
 urlsCartaz.forEach((valorAtual) => {
     filmes.innerHTML += `<div class="item"><img class="box-filme" src="${valorAtual.link}" alt="${valorAtual.nome}"></div>`
 })
@@ -111,7 +115,9 @@ urlsCartaz.forEach((valorAtual) => {
 urlsAcao.forEach((valorAtual) => {
     acao.innerHTML += `<div class="item"><img class="box-filme" src="${valorAtual.link}" alt="${valorAtual.nome}"></div>`
 })
+// Fim função
 
+// Funções de click para os botões do banner
 function clicar(){
     modalOverlay.innerHTML = `<iframe src="https://www.youtube.com/embed/Ws9X6I5CvcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 }
@@ -119,7 +125,9 @@ function clicar(){
 function informacao(){
     alert("Assista agora a nova temporada")
 }
+//Fim função
 
+// JQuery para fazer o carrosel
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
